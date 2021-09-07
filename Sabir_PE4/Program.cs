@@ -33,6 +33,14 @@ namespace Sabir_PE4
             Console.WriteLine("Please enter Number 2");
             val2 = Convert.ToInt32(Console.ReadLine());
 
+            //This would be the most logical statement to use but the instructions asked to use the answer
+            //from the previous question so I did not use it
+
+            //if ((val1  <10) || (val2 < 10))
+            //{
+            //    Console.WriteLine("Number one is: {0}\n Number two is: {1}", val1, val2);
+            //}
+
             //Using the logic from exercise 1 to test whether or not the values are less than 10
             //by using if statements with different operands to test the values and force the user
             //to enter two new numbers if both values are greater than or equal to.
