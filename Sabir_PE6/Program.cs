@@ -36,7 +36,8 @@ namespace Sabir_PE6
             //user to keep entering values until they are acceptable
             while(guessNumber > 100 || guessNumber < 0)
             {
-                Console.WriteLine("Invalid Output: Please enter a number between 1 and 100.");
+                //fixed a typing error where the original output was "a number between 1 and 100"
+                Console.WriteLine("Invalid Output: Please enter a number between 0 and 100.");
                 guessNumber = Convert.ToInt32(Console.ReadLine());
             }
 
@@ -63,7 +64,8 @@ namespace Sabir_PE6
                 //user to keep entering values until they are acceptable
                 while (guessNumber > 100 || guessNumber < 0)
                 {
-                    Console.WriteLine("Invalid Output: Please enter a number between 1 and 100.");
+                    //fixed a typing error where the original output was "a number between 1 and 100"
+                    Console.WriteLine("Invalid Output: Please enter a number between 0 and 100.");
                     guessNumber = Convert.ToInt32(Console.ReadLine());
                 }
 
