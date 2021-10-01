@@ -19,7 +19,7 @@ namespace Sabir_PE12
 
         public MyClass()
         {
-            myString = "basic string ";
+           
         }
         public string MyString
         {
@@ -52,7 +52,7 @@ namespace Sabir_PE12
 
         public override string GetString()
         {
-            return myString += " Output from derived class";
+            return base.myString += " Output from derived class";
         }
 
     }
