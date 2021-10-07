@@ -1,0 +1,13 @@
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+//[+A:Mybase|-password:string;|+Password:string;+MyAbstractMethod(a:int,b:string):string;+A:MyVirtualMethod(a:string):v]
+//[+:IMyBaseInterface|MyMethod(d:double):double]
+//[-:IMyBaseInterface2]
+//[-:MyClass|+:MyAbstractMethod(a:int,b:string):string:o]
+[+I:ICustomer|Greet()]
+[+Customer|+name:string;-creditCardNumber:string|+CreditCardNumber:string:w;+Greet()]
+[+I:ICustomer]^[+Customer]
+[+A:HotDrink|+instant:bool;+milk:bool;-sugar:byte;+brand:string;+size:string;+customer:Customer|+AddSugar(amount:byte):v;+Steam():a|();(brand:string)]
+[+CupOfCoffee|+beanType:string|+Steam():o|();(brand:string):base(brand)]
+[+A:HotDrink]<-.-[+CupOfCoffee]
