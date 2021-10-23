@@ -1,0 +1,16 @@
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+//[+A:Mybase|-password:string;|+Password:string;+MyAbstractMethod(a:int,b:string):string;+A:MyVirtualMethod(a:string):v]
+//[+:IMyBaseInterface|MyMethod(d:double):double]
+//[-:IMyBaseInterface2]
+//[-:MyClass|+:MyAbstractMethod(a:int,b:string):string:o]
+[+A:VideoGame|-title:string;-developer:string|+GameInfo:string;|+Install():a;+Delete():a;+Rage():v;|]
+[+:ISinglePlayer|Start(); Play(); Finish();]
+[+:IMultiPlayer|Start(); Play(); Grind(); PlayCompetitive(); GiveUp();]
+[+SinglePlayerRpg|+Start();+Play();+Finish();+Install():o;+Delete():o;+Rage:o;|]
+[+A:VideoGame]<-.-[+SinglePlayerRpg]
+[+:ISinglePlayer]^[+SinglePlayerRpg]
+[+MultiplayerShooter|+Start();+Play();+Grind();+PlayCompetitive();+GiveUp();+Install():o;+Delete():o;+Rage:o;|]
+[+A:VideoGame]<-.-[+MultiplayerShooter]
+[+:IMultiPlayer]^[+MultiplayerShooter]
