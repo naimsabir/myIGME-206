@@ -100,7 +100,4 @@ namespace Crash_TestFile
         }
 
     }
-    public class Class1
-    {
-    }
 }
